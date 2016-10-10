@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+	<meta charset="utf-8" />
+	<title>{{name}}-叉叉直播-更全面的电视直播-网络电视</title>
+	<meta content="{{name}}直播" name="keywords">
+	<meta content="叉叉电视直播—专业全面的电视直播平台。及时收录国内外电视台节目，高清流畅直播免费在线观看" name="description">
+	<link rel="shortcut icon" type="image/x-icon" href="{{url_for('tv_v.static', filename='css/images/favicon.ico',_external=True)}}" />
+	<link rel="stylesheet" href="{{url_for('tv_v.static', filename='css/style.css',_external=True)}}" type="text/css" media="all" />
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="{{url_for('tv_v.static', filename='js/functions.js',_external=True)}}"></script>	
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0827f06c83378f89ccb9ffb904d52765";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<div class="light-bg">
+			<div class="shell">
+				<div class="header">
+					
+					<h1 id="logo"><a href="{{url_for('tv_v.mainpage',_external=True)}}">叉叉直播</a></h1>
+					<nav id="navigation">
+						<ul>
+							<li><a href="{{url_for('tv_v.mainpage',_external=True)}}">主页</a></li>
+						
+							<li><a href="{{url_for('tv_v.link',_external=True)}}">联系我们</a></li>
+						</ul>
+					</nav>
+					<div class="cl">&nbsp;</div>
+				</div>
+				<div class="main">
+<aside class="sidebar">
+                                                <div class="widget">
+                                                        <h3 class="widgettitle">节目预告</h3>
+                                                        <ul>
+{% include 'program/tv_'+chanel+'.html' %}
+                                                        </ul>
+                                                </div>
+                                               <div class="widget">
+                                                        <h3 class="widgettitle">热门频道</h3>
+                                                        <ul>
+<li><a href="{{url_for("tv_v.onetv",slug="cctv1",_external=True)}}">CCTV-1</a></li>
+<li><a href="{{url_for("tv_v.onetv",slug="cctv5",_external=True)}}">CCTV-5</a></li>
+<li><a href="{{url_for("tv_v.onetv",slug="zhejiang",_external=True)}}">浙江卫视</a></li>
+<li><a href="{{url_for("tv_v.onetv",slug="btv1",_external=True)}}">北京卫视</a></li>
+<li><a href="{{url_for("tv_v.onetv",slug="jiangsu",_external=True)}}">江苏卫视</a></li>
+<li><a href="{{url_for("tv_v.onetv",slug="hubei",_external=True)}}">湖北卫视</a></li>
+<li><a href="{{url_for("tv_v.onetv",slug="shenzhen",_external=True)}}">深圳卫视</a></li>
+<li> </li>
+<li> </li>
+<li> </li>
+
+                                                        </ul>
+                                                </div>
+
+
+
+                                        </aside>
+
+					<section class="content">
+						<div class="post">
+							<div class="post-inner">
+								<header>
+						<h2><a href="{{url_for("tv_v.onetv",slug=chanel,_external=True)}}"> {{name}}</a></h2>
+								
+								</header>
+								<div class="vplace">
+								</div>
+								<div class="img-holder">
+				<iframe src="{{url}}" height="420" width="737" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+								</div>
+								<div class="post-cnt">
+								<div class="flash">
+	<div class="con">
+		<ul>
+			<li class="current ti1">
+				<h3>卫视频道</h3>
+				<div class="show">
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="anhui",_external=True)}}">安徽卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="btv1",_external=True)}}">北京卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="chongqing",_external=True)}}">重庆卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="dongfang",_external=True)}}">东方卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="fujian",_external=True)}}">东南卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="gansu",_external=True)}}">甘肃卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="guangdong",_external=True)}}">广东卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="guangxi",_external=True)}}">广西卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="guizhou",_external=True)}}">贵州卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="hebei",_external=True)}}">河北卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="heilongjiang",_external=True)}}">黑龙江卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="henan",_external=True)}}">河南卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="hubei",_external=True)}}">湖北卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="hunan",_external=True)}}">湖南卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="jiangsu",_external=True)}}">江苏卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="jiangxi",_external=True)}}">江西卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="jilin",_external=True)}}">吉林卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="liaoning",_external=True)}}">辽宁卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="travel",_external=True)}}">旅游卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="neimenggu",_external=True)}}">内蒙古卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="ningxia",_external=True)}}">宁夏卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="qinghai",_external=True)}}">青海卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="shandong",_external=True)}}">山东卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="shan3xi",_external=True)}}">陕西卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="shan1xi",_external=True)}}">山西卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="sichuan",_external=True)}}">四川卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="shenzhen",_external=True)}}">深圳卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="tianjin",_external=True)}}">天津卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="xinjiang",_external=True)}}">新疆卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="xizang",_external=True)}}">西藏卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="yunnan",_external=True)}}">云南卫视</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="zhejiang",_external=True)}}">浙江卫视</a></div>
+
+				</div>
+			</li>
+			<li class="ti2">
+				<h3>央视频道</h3>
+				<div class="show">
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv1",_external=True)}}">CCTV-1</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv2",_external=True)}}">CCTV-2</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv3",_external=True)}}">CCTV-3</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv4",_external=True)}}">CCTV-4(亚)</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv4america",_external=True)}}">CCTV-4(美)</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv4europe",_external=True)}}">CCTV-4(欧)</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv5",_external=True)}}">CCTV-5</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv5plus",_external=True)}}">CCTV-5+</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv6",_external=True)}}">CCTV-6</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv7",_external=True)}}">CCTV-7</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv8",_external=True)}}">CCTV-8</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvdoc",_external=True)}}">CCTV-9(英)</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvjilu",_external=True)}}">CCTV-9</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv10",_external=True)}}">CCTV-10</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv11",_external=True)}}">CCTV-11</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv12",_external=True)}}">CCTV-12</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv13",_external=True)}}">CCTV-13</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvchild",_external=True)}}">CCTV-14</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv15",_external=True)}}">CCTV-15</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctv9",_external=True)}}">CCTV-NEWS</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvarabic",_external=True)}}">CCTV-阿语</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="zhinan",_external=True)}}">CCTV-电视指南</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="diyijuchang",_external=True)}}">CCTV-第一剧场</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvfrench",_external=True)}}">CCTV-法语</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvzhengquanzixun",_external=True)}}">CCTV-证券资讯</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvgaowang",_external=True)}}">CCTV-高尔夫</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="guofang",_external=True)}}">CCTV-国防军事</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="dianshigouwu",_external=True)}}">CCTV-购物频道</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="hjjc",_external=True)}}">CCTV-怀旧剧场</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvlaogushi",_external=True)}}">CCTV-老故事</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="shishang",_external=True)}}">CCTV-女性时尚</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvrussian",_external=True)}}">CCTV-俄语</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="wsjk",_external=True)}}">CCTV-卫生健康</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="cctvxiyu",_external=True)}}">CCTV-西语</a></div>
+<div class="item"><a href="{{url_for("tv_v.onetv",slug="xinkedongman",_external=True)}}">CCTV-新科动漫</a></div>
+
+				
+				</div>
+			</li>
+			<li class="ti3">
+				<h3>国外频道</h3>
+				<div class="show">
+					
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+								</div>
+							</div>
+						</div>
+                        <div class="copyrights"></a></div>
+					</section>
+					<div class="cl">&nbsp;</div>
+				</div>
+				<div class="footer">
+					<nav class="footer-nav">
+						<ul>
+						</ul>
+					</nav>
+					<p class="copy">Copyright © 2015, All Rights Reserved<span>|</span> <a href="{{url_for('tv_v.mainpage',_external=True)}}">xxptv.com </a></p>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

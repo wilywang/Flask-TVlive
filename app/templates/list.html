@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table listtable">
+   <thead>
+      <tr>
+         <th>ID</th>
+         <th>密码</th>
+      </tr>
+   </thead>
+   <tbody>
+{% for ac in accounts %}
+      <tr>
+         <td>{{ ac.userid }}</td>
+         <td>{{ ac.passwd }}</td>
+      </tr>
+{% endfor %}
+   </tbody>
+</table>
+<p>
+<a href={{ url_for("list1") }}>Home</a>
+<a href={{ url_for("list2") }}>signout</a>
+</p>
+
+{% endblock %}
+
+
+

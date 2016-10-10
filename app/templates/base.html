@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>社工库</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+.content {padding-top: 80px;} 
+a.brand {color: #fff }
+.wrap{width:80%}
+.searchform{
+margin-left:20%;
+width:40%}
+.searchbtn{
+padding-left:5px
+}
+.listtable{
+width:80%;
+margin-left:10%
+}
+</style>
+  </head>
+
+  <body>
+   {%- block topbar -%}
+
+    	<nav class="navbar navbar-inverse navbar-fixed-top">
+      	<div class="container">
+        <div class="navbar-header">
+          <h2>
+              <a href="/" class="brand">社工库</a> <small>专业查询XXX</small>
+          </h2>
+        </div>
+        <div class="navbar-collapse">
+        </div><!--/.nav-collapse -->
+     	</div>
+    	</nav>
+    	{%- endblock -%}
+    <div class="container wrap">
+      <div class="content">
+    <form class="searchform" role="search" method="post" action="{{ request.query_string }}">
+      <div class="input-group">
+         <input class="form-control" type="text"  placeholder="输入QQ，EMail，账号..." name="search"/>
+         <span class="input-group-btn searchbtn">
+           <button class="btn btn-primary btn-xm" onclick="scan()" type="submit">搜索</button>
+         </span>
+
+
+       </div>
+     </form>
+<p>
+<a href="{{url_for('account_views.list1')}}">Home</a>
+<a href="/tv/jjss.html">signout</a>
+</p>
+
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    {% block js_footer %}{% endblock %}
+
+  </body>
+</html>
+
+
